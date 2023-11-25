@@ -1,0 +1,326 @@
+.review{
+
+	&-title{
+		h1{
+			margin-bottom: 47px;
+			@include r($mobile-lg){
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	&-form{
+		max-width: 1062px;
+		margin: 0 auto 100px;
+		border-radius: 24px;
+		background-color: $colorLightingGrey;
+		padding: 50px 15px 70px;
+		text-align: center;
+		@include r($mobile-lg){
+			padding: 10px 0 15px;
+			border-radius: 12px;
+		}
+		&__item{
+			text-align: center;
+			padding: 50px 0;
+			border-bottom: 1px solid rgba(43, 45, 47, 0.1);
+			@include r($mobile-lg){
+				padding: 40px 15px;
+			}
+			&.message{
+				border-bottom: none;
+			}
+			&--title{
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 24px;
+				margin-bottom: 10px;
+				.orange{
+					font-weight: 800;
+				}
+				@include r($mobile-lg){
+					font-size: 18px;
+					font-weight: 800;
+					line-height: 18px;
+				}
+			}
+			&--subtitle{
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 120%;
+				margin-bottom: 30px;
+				@include r($mobile-lg){
+					font-size: 12px;
+					font-weight: 300;
+					line-height: 120%;
+				}
+			}
+			textarea{
+				min-height: 250px;
+				max-width: 629px;
+				margin: 0 auto;
+				@include r($mobile){
+					min-height: 300px;
+				}
+			}
+			&--wrapper{
+				&.velo{
+					display: grid;
+					grid-template-columns: repeat(2,1fr);
+					grid-gap: 10px;
+					max-width: 850px;
+					margin: 0 auto;
+					text-align: left;
+					@include r($mobile-md){
+						grid-template-columns: repeat(1,1fr);
+					}
+					.form-group{
+						padding: 15px;
+						margin-bottom: 0;
+						.form-group:not(:last-child){
+							margin-bottom: 0;
+						}
+						.checkbox [type=checkbox]~label:before {
+							top: -7px;
+							@include r($mobile-lg){
+								top: -9px;
+							}
+						}
+						.checkbox [type=checkbox]~label:after {
+							top: -7px;
+							@include r($mobile-lg){
+								top: -9px;
+							}
+						}
+						.checkbox [type=checkbox]~label{
+							@include r($mobile-lg){
+								font-size: 15px;
+								line-height: 15px;
+							}
+						}
+					}
+				}
+			}
+			&--error{
+				display: none;
+				font-size: 10px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				color: $colorRed;
+				margin-top: 30px;
+				&-icon{
+					display: inline-block;
+					margin-right: 3px;
+				}
+			}
+			&.has-error{
+				.review-form__item--error{
+					display: flex;
+				}
+				.checkbox [type=checkbox]~label:before{
+					border: 2px solid $colorRed;
+				}
+			}
+		}
+		.button-wrapper{
+			min-width: 417px;
+			@include r($mobile-lg){
+				margin: 0 15px;
+			}
+			@include r($mobile){
+				min-width: unset;
+				width: calc(100% - 30px);
+			}
+			button{
+				width: 100%;
+			}
+		}
+	}
+
+	&-thank{
+		&__wrapper{
+			border-radius: 24px;
+			background-color: $colorLightingGrey;
+			padding: 43px 15px 39px;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		&__title{
+			h1{
+				margin-bottom: 24px;
+				@include r($tablet-x-sm){
+					font-size: 4rem;
+					line-height: 4rem;
+				}
+				@include r($mobile-lg){
+					font-size: 2.4rem;
+					line-height: 2.4rem;
+					margin-bottom: 14px;
+				}
+				@include r($mobile){
+					br:last-of-type{
+						display: none;
+					}
+				}
+			}
+		}
+		&__text{
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 120%;
+			margin-bottom: 88px;
+			@include r($mobile-lg){
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 120%;
+				margin-bottom: 40px;
+			}
+		}
+		&__btn{
+			min-width: 417px;
+			.btn{
+				height: 54px;
+				width: 100%;
+				text-transform: uppercase;
+			}
+			@include r($mobile-lg){
+				min-width: unset;
+				width: 100%;
+				.btn{
+					height: 48px;
+				}
+			}
+		}
+	}
+
+}
+
+.review-range{
+	position: relative;
+	width: 100%;
+	max-width: 445px;
+	margin: 0 auto;
+}
+
+.box-minmax{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: lowercase;
+}
+.range-slider {
+	padding: 13px 0;
+}
+.rs-range {
+	--percent: 10%;
+	width: 100%;
+	padding: 0;
+	border: none;
+	overflow: visible;
+	height: 8px;
+	border-radius: 12px;
+	cursor: pointer;
+	box-shadow: none;
+	background-color: rgba(217, 217, 217, 0.20);
+	background-image: linear-gradient($colorOrange,rgba(217, 217, 217, 0.20));
+	background-size: var(--percent) 100%;
+	background-repeat: no-repeat;
+	//transition: background-color var(--trans-dur);
+	transition-duration: .2s;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	transition: all .2s ease;
+	&:focus {
+		outline: none;
+		border: none;
+	}
+	&::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 8px;
+		cursor: pointer;
+		box-shadow: none;
+		border-radius: 12px;
+		background: transparent;
+		border: none;
+		position: relative;
+		z-index: 2;
+	}
+	&::-moz-range-track {
+		width: 100%;
+		height: 8px;
+		cursor: pointer;
+		box-shadow: none;
+		border-radius: 12px;
+		background: transparent;
+		border: none;
+	}
+
+	&::-webkit-slider-thumb {
+		box-shadow: none;
+		border: 5px solid transparent;
+		height: 44px;
+		width: 44px;
+		margin-top: -20px;
+		background: transparent;
+		cursor: pointer;
+		-webkit-appearance: none;
+		border-radius: 50%;
+		position: relative;
+		z-index: 25;
+	}
+	&::-moz-range-thumb{
+		box-shadow: none;
+		border: 5px solid transparent;
+		height: 44px;
+		width: 44px;
+		margin-top: -20px;
+		background: transparent;
+		cursor: pointer;
+		-webkit-appearance: none;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 25;
+	}
+	&::-moz-focus-outer {
+		border: 0;
+	}
+}
+.rs-label {
+	position: absolute;
+	transform-origin: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	background: $colorWhite;
+	border-radius: 50%;
+	text-align: center;
+	box-sizing: border-box;
+	border: 5px solid $colorOrange;
+	top: 0;
+	left: attr(value);
+	color: $colorOrange;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: lowercase;
+	z-index: 1;
+	user-select: none;
+	transition-duration: .1s;
+	transition: all .2s ease;
+	@include r($mobile){
+		margin-left: -5px;
+	}
+}

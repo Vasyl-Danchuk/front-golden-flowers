@@ -1,0 +1,100 @@
+.btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	color: $colorWhite;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1;
+	user-select: none;
+	@include r($laptop-sm) {
+
+	}
+	@include r($tablet) {
+
+	}
+	padding: 13px 28px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid $colorPrimary;
+	border-radius: 5px;
+	background-color: $colorPrimary;
+	box-shadow: none;
+	transition: background 0.2s ease;
+	outline: none;
+	cursor: pointer;
+	@include r($mobile) {
+
+	}
+	&:hover,
+	&:active {
+		text-decoration: none;
+		outline: none;
+	}
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+	&.disabled,
+	&[disabled] {
+		pointer-events: none;
+		opacity: 0.5;
+		cursor: auto;
+	}
+	@media (any-hover: hover){
+		&:hover{
+			background-color: $colorWhite;
+			color: $colorPrimary;
+		}
+	}
+}
+
+.swiper-pagination-bullet{
+	transform: rotate(45deg);
+	border-bottom-right-radius: 0;
+	background-color: $colorGray;
+	opacity: 1;
+	&.swiper-pagination-bullet-active{
+		background-color: $colorPrimary;
+	}
+}
+
+.slider-arrow:not(.slick-disabled) {
+	transition: .2s all ease;
+	svg path {
+		transition: .2s all ease;
+	}
+	&:hover {
+		@include rm($tablet) {
+			background-color: $colorBlack;
+			svg path {
+				stroke: $colorWhite;
+			}
+		}
+	}
+	&:active {
+		background-color: $colorWhite;
+		svg path {
+			stroke: $colorOrange;
+		}
+	}
+}
+
+.btn-transparent{
+	padding: 10px;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 16px;
+	border-radius: 100px;
+	color: $colorBlackDark;
+	border: 1px solid $colorBlackDark;
+	transition: all .3s ease;
+	&:hover{
+		color: $colorOrange;
+		border: 1px solid $colorOrange;
+	}
+}
+

@@ -1,0 +1,29 @@
+{
+	"extends": ["eslint:recommended", "jquery"],
+	"parser": "babel-eslint",
+	"root": true,
+	"env": {
+		"browser": true,
+		"node": false
+	},
+	"globals": {
+		"$": false,
+		"initMap": false
+	},
+	"rules": {
+		"indent": ["error", "tab"],
+		"max-len": ["error", 160],
+		"strict": ["error", "global"],
+		"no-unused-vars": ["warn", { "vars": "local", "args": "after-used" }],
+		"space-in-parens": [
+			"error",
+			"always",
+			{
+				"exceptions": ["{}"]
+			}
+		],
+		"quotes": [2, "single"],
+		"no-console": ["warn", {}]
+	}
+}
+

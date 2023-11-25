@@ -1,0 +1,50 @@
+{
+  "name": "gulp-template",
+  "version": "1.0.0",
+  "description": "gulp 4 template",
+  "author": "Oleksandr07 <oleksandr.motyka@gmail.com>",
+  "contributors": [
+    {
+      "name": "Oleksandr Motyka",
+      "url": "https://gitlab.com/Oleksandr07"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/Oleksandr07"
+  },
+  "browsers": [
+    "last 15 versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "~10.4.4",
+    "babel-eslint": "^7.2.3",
+    "browser-sync": "~2.27.9",
+    "del": "^6.0.0",
+    "eslint-config-jquery": "^3.0.0",
+    "gulp": "~4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-consolidate": "~0.2.0",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-include": "~2.4.1",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "~4.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-sourcemaps": "~3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "~6.12.1",
+    "postcss": "^8.4.12",
+    "postcss-svg": "~3.0.0",
+    "sass": "^1.49.11",
+    "swiper": "^11.0.4"
+  }
+}

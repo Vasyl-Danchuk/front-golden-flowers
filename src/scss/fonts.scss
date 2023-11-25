@@ -1,0 +1,11 @@
+// area to remove
+@import 'lib/font-mixin';
+
+@include font('Cuprum', Cuprum-Bold, 700);
+@include font('Cuprum', Cuprum-Medium, 500);
+@include font('Cuprum', Cuprum-SemiBold, 600);
+@include font('Cuprum', Cuprum-Regular, 400);
+@include font('BerkshireSwash', BerkshireSwash, 400);
+@include font('ITCAmerican', ITC-American-Typewriter-Std-Condensed, 500);
+@include font('EngraversMT', Engravers-MT, 500);
+// area to remove in shopify end

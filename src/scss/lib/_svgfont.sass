@@ -1,0 +1,65 @@
+$fontPathTpl: 'fonts/'
+$fontNameTpl: 'svgfont'
+@font-face
+	font-family: $fontNameTpl
+	src: url($fontPathTpl + $fontNameTpl + '.ttf') format('truetype')
+	src: url($fontPathTpl + $fontNameTpl + '.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+	font-display: swap
+
+$icon-i-close: "\EA01"
+$icon-user-icon: "\EA02"
+$icon-wishlist-icon: "\EA03"
+$icon-cart-icon: "\EA04"
+$icon-adress-icon: "\EA05"
+$icon-fb-icon: "\EA06"
+$icon-phone-icon: "\EA07"
+$icon-arrow-item: "\EA0A"
+$icon-hamburger-menu: "\EA0B"
+$icon-xmark: "\EA0C"
+$icon-instagram-icon: "\EA0D"
+$icon-mail-icon: "\EA0E"
+$icon-clock-icon: "\EA0F"
+
+
+%icon
+	font-family: $fontNameTpl
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-i-close:before
+	content: $icon-i-close
+.icon-user-icon:before
+	content: $icon-user-icon
+.icon-wishlist-icon:before
+	content: $icon-wishlist-icon
+.icon-cart-icon:before
+	content: $icon-cart-icon
+.icon-adress-icon:before
+	content: $icon-adress-icon
+.icon-fb-icon:before
+	content: $icon-fb-icon
+.icon-phone-icon:before
+	content: $icon-phone-icon
+.icon-arrow-item:before
+	content: $icon-arrow-item
+.icon-hamburger-menu:before
+	content: $icon-hamburger-menu
+.icon-xmark:before
+	content: $icon-xmark
+.icon-instagram-icon:before
+	content: $icon-instagram-icon
+.icon-mail-icon:before
+	content: $icon-mail-icon
+.icon-clock-icon:before
+	content: $icon-clock-icon

@@ -1,0 +1,14 @@
+.uikit {
+    &-box {
+
+    }
+    &-item {
+        margin: 25px 0;
+        h1 {
+            text-align: left;
+        }
+        .form-group {
+            max-width: 430px;
+        }
+    }
+}

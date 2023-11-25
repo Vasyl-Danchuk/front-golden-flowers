@@ -1,0 +1,30 @@
+$fontPathTpl: '<%= fontPath %>'
+$fontNameTpl: '<%= fontName %>'
+@font-face
+	font-family: $fontNameTpl
+	src: url($fontPathTpl + $fontNameTpl + '.ttf') format('truetype')
+	src: url($fontPathTpl + $fontNameTpl + '.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+	font-display: swap
+
+<% _.each(glyphs, function(glyph) { %>$<%= className %>-<%= glyph.name %>: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>"
+<% }); %>
+
+%<%= className %>
+	font-family: $fontNameTpl
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.<%= className %>, [class^="icon-"], [class*=" icon-"]
+	@extend %<%= className %>
+	display: inline-block
+
+<% _.each(glyphs, function(glyph) { %>.<%= className %>-<%= glyph.name %>:before
+	content: $<%= className %>-<%= glyph.name %>
+<% }); %>
