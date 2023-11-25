@@ -1209,26 +1209,7 @@
 <script src="js/libs.js"></script>
 <script src="js/app.js"></script>
 
-<script>
-	$(document).on('click', 'a[data-tab-link]', function (evt) {
-		const linkAttr = $(this).attr('data-tab-link');
-		const tabs = $('div[data-tab]');
 
-		$('a[data-tab-link]').not(this).removeClass('active');
-		$(this).addClass('active');
-
-		tabs.each(function () {
-			const tab = $(this);
-			const tabAttr = tab.attr('data-tab');
-
-			$('html, body').animate({ scrollTop: 115 }, 0, function () {
-				tabAttr === linkAttr ? tab.show() : tab.hide();
-				const header = Header.getHeader()
-				header.removeClass('header-hidden');
-			});
-		});
-	});
-</script>
 
 </body>
 </html>
