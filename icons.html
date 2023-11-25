@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
+	<link rel="icon" href="img/favicons/favicon.png" type="image/x-icon">
+	<title>Iconfont Preview</title>
+	<style type="text/css" media="all">
+		body{
+			font-family: Helvetica, Arial, sans-serif;
+			padding: 30px;
+			margin: 0;
+		}
+		@font-face {
+			font-family: "svgfont";
+			src: url('css/fonts/svgfont.ttf') format('truetype');
+			src: url('css/fonts/svgfont.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+		h1 {
+			text-align: left;
+			font-size: 33px;
+			font-weight: 100;
+			margin-bottom: 45px;
+		}
+		.size{
+			margin-left: 30px;
+			color: #888;
+		}
+		.size input{
+			width: 300px;
+		}
+		.icons-list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+			text-align: center;
+			-webkit-columns: 4;
+			columns: 4;
+		}
+		.icon-box {
+			display: inline-block;
+			vertical-align: middle;
+			min-width: 200px;
+			min-height: 200px;
+			border-radius: 5px;
+		}
+		.icon-container {
+			min-height: 100px;
+			font-size: 60px;
+			text-align: left;
+			padding-top: 10px;
+		}
+		.icon-box input {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 12px;
+			border-radius: 5px;
+			height: 30px;
+			padding: 0;
+			text-align: center;
+			border: 1px solid #CCC;
+			-webkit-appearance: none;
+		}
+		.icon-box .icon-class-name {
+			width: 70%;
+		}
+		.icon-box .icon-unicode {
+			width: 30%;
+			font-size: 10px;
+			color: #ccc;
+			border: none;
+			text-align: left;
+			padding-left: 10px;
+		}
+		.icon {
+			font-family: "svgfont";
+			display: inline-block;
+			vertical-align: middle;
+			font-style: normal;
+			font-weight: normal;
+			text-rendering: auto;
+			speak: none;
+			min-width: 1em;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		
+		.icon-i-close:before {
+			content: "\EA01";
+		}
+		.icon-user-icon:before {
+			content: "\EA02";
+		}
+		.icon-wishlist-icon:before {
+			content: "\EA03";
+		}
+		.icon-cart-icon:before {
+			content: "\EA04";
+		}
+		.icon-adress-icon:before {
+			content: "\EA05";
+		}
+		.icon-fb-icon:before {
+			content: "\EA06";
+		}
+		.icon-phone-icon:before {
+			content: "\EA07";
+		}
+		.icon-arrow-item:before {
+			content: "\EA0A";
+		}
+		.icon-hamburger-menu:before {
+			content: "\EA0B";
+		}
+		.icon-xmark:before {
+			content: "\EA0C";
+		}
+		.icon-instagram-icon:before {
+			content: "\EA0D";
+		}
+		.icon-mail-icon:before {
+			content: "\EA0E";
+		}
+		.icon-clock-icon:before {
+			content: "\EA0F";
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Icons: <span id="count"></span>
+	<label class="size">
+		Icon size <span id="change-value">60</span>
+		<input type="range" id="change-size" min="5" max="100" value="60">
+	</label>
+	</h1>
+
+	<ul class="icons-list">
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-i-close" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA01" readonly>
+		<div class="icon-container">
+		<i class="icon icon-i-close"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-user-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
+		<div class="icon-container">
+		<i class="icon icon-user-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-wishlist-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA03" readonly>
+		<div class="icon-container">
+		<i class="icon icon-wishlist-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-cart-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA04" readonly>
+		<div class="icon-container">
+		<i class="icon icon-cart-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-adress-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA05" readonly>
+		<div class="icon-container">
+		<i class="icon icon-adress-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-fb-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA06" readonly>
+		<div class="icon-container">
+		<i class="icon icon-fb-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-phone-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA07" readonly>
+		<div class="icon-container">
+		<i class="icon icon-phone-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-arrow-item" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA0A" readonly>
+		<div class="icon-container">
+		<i class="icon icon-arrow-item"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-hamburger-menu" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA0B" readonly>
+		<div class="icon-container">
+		<i class="icon icon-hamburger-menu"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-xmark" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA0C" readonly>
+		<div class="icon-container">
+		<i class="icon icon-xmark"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-instagram-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA0D" readonly>
+		<div class="icon-container">
+		<i class="icon icon-instagram-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-mail-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA0E" readonly>
+		<div class="icon-container">
+		<i class="icon icon-mail-icon"></i>
+		</div>
+	</li>
+	
+	<li class="icon-box">
+		<input class="icon-class-name autoselect" type="text" value=".icon-clock-icon" readonly>
+		<input class="icon-unicode autoselect" type="text" value="\EA0F" readonly>
+		<div class="icon-container">
+		<i class="icon icon-clock-icon"></i>
+		</div>
+	</li>
+	
+	</ul>
+
+	<script>
+		const change = document.getElementById('change-size');
+		const changevalue = document.getElementById('change-value');
+		const count = document.getElementById('count');
+		const autoselect = document.getElementsByClassName('autoselect');
+		const icons = document.getElementsByClassName('icon');
+
+		Array.prototype.forEach.call(autoselect, function(el) {
+			el.onclick = function() {
+				this.focus();
+				this.select();
+			};
+		});
+
+		change.onchange = function() {
+			const val = this.value;
+			changevalue.innerHTML = val;
+
+			Array.prototype.forEach.call(icons, function(el) {
+				el.style.fontSize = val + 'px';
+			});
+		}
+
+		count.innerHTML = icons.length;
+	</script>
+</body>
+</html>
